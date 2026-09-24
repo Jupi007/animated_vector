@@ -86,7 +86,7 @@ class RootVectorAnimationProperties extends AnimationProperties {
     ensureIntervalsAreValid();
     final evaluator = AnimationPropertyEvaluator(animationDuration, progress);
 
-    return (alpha: evaluator.evaluate(alpha, defaultAlpha),);
+    return (alpha: evaluator.evaluate(alpha, defaultAlpha));
   }
 
   @override
@@ -160,14 +160,14 @@ class GroupAnimationProperties extends AnimationProperties {
 
   @override
   List<AnimationStepSequence?> get checkedFields => [
-        translateX,
-        translateY,
-        scaleX,
-        scaleY,
-        pivotX,
-        pivotY,
-        rotation,
-      ];
+    translateX,
+    translateY,
+    scaleX,
+    scaleY,
+    pivotX,
+    pivotY,
+    rotation,
+  ];
 
   @override
   EvaluatedGroupAnimationProperties evaluate(
@@ -284,16 +284,16 @@ class PathAnimationProperties extends AnimationProperties {
 
   @override
   List<AnimationStepSequence?> get checkedFields => [
-        pathData,
-        fillColor,
-        fillAlpha,
-        strokeColor,
-        strokeAlpha,
-        strokeWidth,
-        trimStart,
-        trimEnd,
-        trimOffset,
-      ];
+    pathData,
+    fillColor,
+    fillAlpha,
+    strokeColor,
+    strokeAlpha,
+    strokeWidth,
+    trimStart,
+    trimEnd,
+    trimOffset,
+  ];
 
   @override
   EvaluatedPathAnimationProperties evaluate(
@@ -374,7 +374,7 @@ class ClipPathAnimationProperties extends AnimationProperties {
     ensureIntervalsAreValid();
     final evaluator = AnimationPropertyEvaluator(animationDuration, progress);
 
-    return (pathData: evaluator.evaluate(pathData, defaultPathData),);
+    return (pathData: evaluator.evaluate(pathData, defaultPathData));
   }
 
   @override
@@ -450,10 +450,7 @@ class AnimationInterval {
   ///
   /// It is very similar in concept to [Rect.fromLTRB], where you build a rect
   /// by its top point and its bottom point.
-  const AnimationInterval({
-    this.start = Duration.zero,
-    required this.end,
-  });
+  const AnimationInterval({this.start = Duration.zero, required this.end});
 
   /// Constructs a new [AnimationInterval] using
   /// a start point defined by [startOffset] and a [duration].
@@ -465,13 +462,13 @@ class AnimationInterval {
   const AnimationInterval.withDuration({
     Duration startOffset = Duration.zero,
     required Duration duration,
-  })  : start = startOffset,
-        end = startOffset + duration;
+  }) : start = startOffset,
+       end = startOffset + duration;
 
   /// Constructs a new [AnimationInterval] with duration zero which starts at [offset].
   const AnimationInterval.instant({required Duration offset})
-      : start = offset,
-        end = offset;
+    : start = offset,
+      end = offset;
 
   /// Simple getter to get the duration of this interval
   Duration get duration => end - start;
@@ -484,7 +481,7 @@ class AnimationInterval {
   /// with [start] 500ms and [end] 1000ms any [progress] between 0.5 and 1.0
   /// inclusive will return true, while any other value will return false.
   ///
-  /// ```
+  /// ```text
   /// progress
   ///       vvvvv     0.5 - 1.0
   /// |-----=====|    1000 ms total
@@ -550,10 +547,7 @@ class ConstTween<T> extends Animatable<T> {
 
   @override
   T transform(double t) {
-    return Tween<T>(
-      begin: begin,
-      end: end,
-    ).transform(t);
+    return Tween<T>(begin: begin, end: end).transform(t);
   }
 
   /// Create a new [ConstTween] instance based on this but with eventual null values
@@ -561,10 +555,7 @@ class ConstTween<T> extends Animatable<T> {
   ///
   /// Prefer calling [transform] on an instance of [ConstTween] created by this method.
   ConstTween<T> copyWithDefaults(T begin, T end) {
-    return ConstTween<T>(
-      begin: this.begin ?? begin,
-      end: this.end ?? end,
-    );
+    return ConstTween<T>(begin: this.begin ?? begin, end: this.end ?? end);
   }
 }
 
@@ -585,10 +576,7 @@ class ConstColorTween extends ConstTween<Color> {
 
   @override
   ConstColorTween copyWithDefaults(Color begin, Color end) {
-    return ConstColorTween(
-      begin: this.begin ?? begin,
-      end: this.end ?? end,
-    );
+    return ConstColorTween(begin: this.begin ?? begin, end: this.end ?? end);
   }
 }
 
@@ -608,9 +596,6 @@ class ConstPathDataTween extends ConstTween<PathData> {
 
   @override
   ConstPathDataTween copyWithDefaults(PathData begin, PathData end) {
-    return ConstPathDataTween(
-      begin: this.begin ?? begin,
-      end: this.end ?? end,
-    );
+    return ConstPathDataTween(begin: this.begin ?? begin, end: this.end ?? end);
   }
 }

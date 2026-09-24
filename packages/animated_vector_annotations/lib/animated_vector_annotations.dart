@@ -1,7 +1,7 @@
 /// A library to use in tandem with `package:animated_vector` and `package:animated_vector_gen`.
 ///
 /// Contains annotations for code generation, such as [ShapeshifterAsset].
-library animated_vector_annotations;
+library;
 
 export 'dart:ui' show Color, Size, StrokeCap, StrokeJoin;
 export 'package:animated_vector/animated_vector.dart'
