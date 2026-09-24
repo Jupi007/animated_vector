@@ -32,9 +32,8 @@ abstract final class ShapeShifterConverter {
 
     final Map<String, dynamic> layers = json.get("layers");
     final Map<String, dynamic> vectorLayer = layers.get("vectorLayer");
-    final Map<String, dynamic> animation = json
-        .get<Map<String, dynamic>>("timeline")
-        .get("animation");
+    final Map<String, dynamic> animation =
+        json.get<Map<String, dynamic>>("timeline").get("animation");
     final List<_JsonAnimationProperty> blocks = animation
         .get<List<dynamic>>("blocks")
         .map((e) => _JsonAnimationProperty.fromJson(e as Map<String, dynamic>))
@@ -97,7 +96,10 @@ abstract final class ShapeShifterConverter {
       data.root.alpha,
       idGen,
     );
-    timelineRoot["blocks"] = [?alphaAnim, ...info["timeline"]!];
+    timelineRoot["blocks"] = [
+      if (alphaAnim != null) alphaAnim,
+      ...info["timeline"]!,
+    ];
     if (data.root.alpha != 1) {
       vectorLayer["alpha"] = data.root.alpha.eventuallyAsInt;
     }
@@ -383,11 +385,9 @@ abstract final class ShapeShifterConverter {
 
     for (int i = 0; i < properties.length; i++) {
       final AnimationStep<T> prop = properties[i];
-      final T beginValue =
-          prop.tween.begin ??
+      final T beginValue = prop.tween.begin ??
           getNearestDefaultForTween(properties, i, defaultValue, goDown: true);
-      final T endValue =
-          prop.tween.end ??
+      final T endValue = prop.tween.end ??
           getNearestDefaultForTween(properties, i, defaultValue);
 
       final Map<String, dynamic> jsonProp = {
