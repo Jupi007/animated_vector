@@ -1,4 +1,9 @@
-##0.2.2
+## 0.3.0
+
+- [**BREAKING**] Remove animated_vector and dart:ui exports from package, drop flutter specific dependencies
+- Update dependencies and apply lints [#7](https://github.com/dvd-bnc/animated_vector/pull/7)
+
+## 0.2.2
 
 Update dependency on animated_vector
 
