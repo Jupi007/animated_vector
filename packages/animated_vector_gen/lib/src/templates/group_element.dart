@@ -70,7 +70,9 @@ class GroupAnimationPropertiesTemplate extends Template {
       pivotX,
       pivotY,
       rotation,
-    ])) return null;
+    ])) {
+      return null;
+    }
 
     return buildConstructorCall("GroupAnimationProperties", {
       "translateX": translateX,

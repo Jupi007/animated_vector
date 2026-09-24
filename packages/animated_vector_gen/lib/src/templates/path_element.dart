@@ -37,11 +37,13 @@ class PathElementTemplate extends ElementTemplate {
   String? build() {
     return buildConstructorCall("PathElement", {
       "pathData": wrapWithConstructor(pathData, ValueType.pathData),
-      "fillColor":
-          fillColor != null ? "Color(${colorFormat(fillColor!)})" : null,
+      "fillColor": fillColor != null
+          ? "Color(${colorFormat(fillColor!)})"
+          : null,
       "fillAlpha": handleDefault(fillAlpha, 1.0),
-      "strokeColor":
-          strokeColor != null ? "Color(${colorFormat(strokeColor!)})" : null,
+      "strokeColor": strokeColor != null
+          ? "Color(${colorFormat(strokeColor!)})"
+          : null,
       "strokeAlpha": handleDefault(strokeAlpha, 1.0),
       "strokeWidth": handleDefault(strokeWidth, 1.0),
       "strokeCap": strokeCap != null ? "StrokeCap.$strokeCap" : null,
@@ -90,7 +92,9 @@ class PathAnimationPropertiesTemplate extends Template {
       trimStart,
       trimEnd,
       trimOffset,
-    ])) return null;
+    ])) {
+      return null;
+    }
 
     return buildConstructorCall("PathAnimationProperties", {
       "pathData": pathData,

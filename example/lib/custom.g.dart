@@ -18,19 +18,14 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
           GroupElement(
             elements: [
               PathElement(
-                pathData: PathData.parse(
-                  'M 12 6 L 12 6',
-                ),
+                pathData: PathData.parse('M 12 6 L 12 6'),
                 strokeColor: Color(0xFF000000),
                 strokeWidth: 4.0,
                 strokeCap: StrokeCap.round,
                 properties: PathAnimationProperties(
                   strokeWidth: [
                     AnimationStep<double>(
-                      tween: ConstTween<double>(
-                        begin: 4.0,
-                        end: 2.0,
-                      ),
+                      tween: ConstTween<double>(begin: 4.0, end: 2.0),
                       interval: AnimationInterval(
                         end: Duration(milliseconds: 300),
                       ),
@@ -43,13 +38,8 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
             properties: GroupAnimationProperties(
               translateY: [
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 0.0,
-                    end: 6.0,
-                  ),
-                  interval: AnimationInterval(
-                    end: Duration(milliseconds: 300),
-                  ),
+                  tween: ConstTween<double>(begin: 0.0, end: 6.0),
+                  interval: AnimationInterval(end: Duration(milliseconds: 300)),
                   curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
               ],
@@ -58,19 +48,14 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
           GroupElement(
             elements: [
               PathElement(
-                pathData: PathData.parse(
-                  'M 12 18 L 12 18',
-                ),
+                pathData: PathData.parse('M 12 18 L 12 18'),
                 strokeColor: Color(0xFF000000),
                 strokeWidth: 4.0,
                 strokeCap: StrokeCap.round,
                 properties: PathAnimationProperties(
                   strokeWidth: [
                     AnimationStep<double>(
-                      tween: ConstTween<double>(
-                        begin: 4.0,
-                        end: 2.0,
-                      ),
+                      tween: ConstTween<double>(begin: 4.0, end: 2.0),
                       interval: AnimationInterval(
                         end: Duration(milliseconds: 300),
                       ),
@@ -83,13 +68,8 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
             properties: GroupAnimationProperties(
               translateY: [
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 0.0,
-                    end: -6.0,
-                  ),
-                  interval: AnimationInterval(
-                    end: Duration(milliseconds: 300),
-                  ),
+                  tween: ConstTween<double>(begin: 0.0, end: -6.0),
+                  interval: AnimationInterval(end: Duration(milliseconds: 300)),
                   curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
               ],
@@ -98,19 +78,14 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
           GroupElement(
             elements: [
               PathElement(
-                pathData: PathData.parse(
-                  'M 6 12 L 6 12',
-                ),
+                pathData: PathData.parse('M 6 12 L 6 12'),
                 strokeColor: Color(0xFF000000),
                 strokeWidth: 4.0,
                 strokeCap: StrokeCap.round,
                 properties: PathAnimationProperties(
                   strokeWidth: [
                     AnimationStep<double>(
-                      tween: ConstTween<double>(
-                        begin: 4.0,
-                        end: 2.0,
-                      ),
+                      tween: ConstTween<double>(begin: 4.0, end: 2.0),
                       interval: AnimationInterval(
                         end: Duration(milliseconds: 300),
                       ),
@@ -123,13 +98,8 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
             properties: GroupAnimationProperties(
               translateX: [
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 0.0,
-                    end: 6.0,
-                  ),
-                  interval: AnimationInterval(
-                    end: Duration(milliseconds: 300),
-                  ),
+                  tween: ConstTween<double>(begin: 0.0, end: 6.0),
+                  interval: AnimationInterval(end: Duration(milliseconds: 300)),
                   curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
               ],
@@ -138,19 +108,14 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
           GroupElement(
             elements: [
               PathElement(
-                pathData: PathData.parse(
-                  'M 18 12 L 18 12',
-                ),
+                pathData: PathData.parse('M 18 12 L 18 12'),
                 strokeColor: Color(0xFF000000),
                 strokeWidth: 4.0,
                 strokeCap: StrokeCap.round,
                 properties: PathAnimationProperties(
                   strokeWidth: [
                     AnimationStep<double>(
-                      tween: ConstTween<double>(
-                        begin: 4.0,
-                        end: 2.0,
-                      ),
+                      tween: ConstTween<double>(begin: 4.0, end: 2.0),
                       interval: AnimationInterval(
                         end: Duration(milliseconds: 300),
                       ),
@@ -163,35 +128,23 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
             properties: GroupAnimationProperties(
               translateX: [
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 0.0,
-                    end: -6.0,
-                  ),
-                  interval: AnimationInterval(
-                    end: Duration(milliseconds: 300),
-                  ),
+                  tween: ConstTween<double>(begin: 0.0, end: -6.0),
+                  interval: AnimationInterval(end: Duration(milliseconds: 300)),
                   curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
               ],
             ),
           ),
           PathElement(
-            pathData: PathData.parse(
-              'M 12 12 L 12 12',
-            ),
+            pathData: PathData.parse('M 12 12 L 12 12'),
             strokeColor: Color(0xFF000000),
             strokeWidth: 4.0,
             strokeCap: StrokeCap.round,
             properties: PathAnimationProperties(
               strokeWidth: [
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 4.0,
-                    end: 2.0,
-                  ),
-                  interval: AnimationInterval(
-                    end: Duration(milliseconds: 300),
-                  ),
+                  tween: ConstTween<double>(begin: 4.0, end: 2.0),
+                  interval: AnimationInterval(end: Duration(milliseconds: 300)),
                   curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
               ],
@@ -202,9 +155,7 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
             translateY: -6.0,
             elements: [
               PathElement(
-                pathData: PathData.parse(
-                  'M 12 12 L 6.4 6.4',
-                ),
+                pathData: PathData.parse('M 12 12 L 6.4 6.4'),
                 strokeColor: Color(0xFF000000),
                 strokeWidth: 4.0,
                 strokeCap: StrokeCap.round,
@@ -212,10 +163,7 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
                 properties: PathAnimationProperties(
                   strokeWidth: [
                     AnimationStep<double>(
-                      tween: ConstTween<double>(
-                        begin: 4.0,
-                        end: 2.0,
-                      ),
+                      tween: ConstTween<double>(begin: 4.0, end: 2.0),
                       interval: AnimationInterval(
                         end: Duration(milliseconds: 300),
                       ),
@@ -224,10 +172,7 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
                   ],
                   trimEnd: [
                     AnimationStep<double>(
-                      tween: ConstTween<double>(
-                        begin: 0.000001,
-                        end: 1.0,
-                      ),
+                      tween: ConstTween<double>(begin: 0.000001, end: 1.0),
                       interval: AnimationInterval(
                         start: Duration(milliseconds: 300),
                         end: Duration(milliseconds: 800),
@@ -241,20 +186,12 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
             properties: GroupAnimationProperties(
               translateX: [
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: -6.0,
-                    end: -0.5,
-                  ),
-                  interval: AnimationInterval(
-                    end: Duration(milliseconds: 300),
-                  ),
+                  tween: ConstTween<double>(begin: -6.0, end: -0.5),
+                  interval: AnimationInterval(end: Duration(milliseconds: 300)),
                   curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: -0.5,
-                    end: 0.0,
-                  ),
+                  tween: ConstTween<double>(begin: -0.5, end: 0.0),
                   interval: AnimationInterval(
                     start: Duration(milliseconds: 300),
                     end: Duration(milliseconds: 800),
@@ -264,20 +201,12 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
               ],
               translateY: [
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: -6.0,
-                    end: -0.5,
-                  ),
-                  interval: AnimationInterval(
-                    end: Duration(milliseconds: 300),
-                  ),
+                  tween: ConstTween<double>(begin: -6.0, end: -0.5),
+                  interval: AnimationInterval(end: Duration(milliseconds: 300)),
                   curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: -0.5,
-                    end: 0.0,
-                  ),
+                  tween: ConstTween<double>(begin: -0.5, end: 0.0),
                   interval: AnimationInterval(
                     start: Duration(milliseconds: 300),
                     end: Duration(milliseconds: 800),
@@ -292,9 +221,7 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
             translateY: -6.0,
             elements: [
               PathElement(
-                pathData: PathData.parse(
-                  'M 12 12 L 17.6 6.4',
-                ),
+                pathData: PathData.parse('M 12 12 L 17.6 6.4'),
                 strokeColor: Color(0xFF000000),
                 strokeWidth: 4.0,
                 strokeCap: StrokeCap.round,
@@ -302,10 +229,7 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
                 properties: PathAnimationProperties(
                   strokeWidth: [
                     AnimationStep<double>(
-                      tween: ConstTween<double>(
-                        begin: 4.0,
-                        end: 2.0,
-                      ),
+                      tween: ConstTween<double>(begin: 4.0, end: 2.0),
                       interval: AnimationInterval(
                         end: Duration(milliseconds: 300),
                       ),
@@ -314,10 +238,7 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
                   ],
                   trimEnd: [
                     AnimationStep<double>(
-                      tween: ConstTween<double>(
-                        begin: 0.000001,
-                        end: 1.0,
-                      ),
+                      tween: ConstTween<double>(begin: 0.000001, end: 1.0),
                       interval: AnimationInterval(
                         start: Duration(milliseconds: 300),
                         end: Duration(milliseconds: 800),
@@ -331,20 +252,12 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
             properties: GroupAnimationProperties(
               translateX: [
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 6.0,
-                    end: 0.5,
-                  ),
-                  interval: AnimationInterval(
-                    end: Duration(milliseconds: 300),
-                  ),
+                  tween: ConstTween<double>(begin: 6.0, end: 0.5),
+                  interval: AnimationInterval(end: Duration(milliseconds: 300)),
                   curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 0.5,
-                    end: 0.0,
-                  ),
+                  tween: ConstTween<double>(begin: 0.5, end: 0.0),
                   interval: AnimationInterval(
                     start: Duration(milliseconds: 300),
                     end: Duration(milliseconds: 800),
@@ -354,20 +267,12 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
               ],
               translateY: [
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: -6.0,
-                    end: -0.5,
-                  ),
-                  interval: AnimationInterval(
-                    end: Duration(milliseconds: 300),
-                  ),
+                  tween: ConstTween<double>(begin: -6.0, end: -0.5),
+                  interval: AnimationInterval(end: Duration(milliseconds: 300)),
                   curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: -0.5,
-                    end: 0.0,
-                  ),
+                  tween: ConstTween<double>(begin: -0.5, end: 0.0),
                   interval: AnimationInterval(
                     start: Duration(milliseconds: 300),
                     end: Duration(milliseconds: 800),
@@ -382,9 +287,7 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
             translateY: 6.0,
             elements: [
               PathElement(
-                pathData: PathData.parse(
-                  'M 12 12 L 6.4 17.6',
-                ),
+                pathData: PathData.parse('M 12 12 L 6.4 17.6'),
                 strokeColor: Color(0xFF000000),
                 strokeWidth: 4.0,
                 strokeCap: StrokeCap.round,
@@ -392,10 +295,7 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
                 properties: PathAnimationProperties(
                   strokeWidth: [
                     AnimationStep<double>(
-                      tween: ConstTween<double>(
-                        begin: 4.0,
-                        end: 2.0,
-                      ),
+                      tween: ConstTween<double>(begin: 4.0, end: 2.0),
                       interval: AnimationInterval(
                         end: Duration(milliseconds: 300),
                       ),
@@ -404,10 +304,7 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
                   ],
                   trimEnd: [
                     AnimationStep<double>(
-                      tween: ConstTween<double>(
-                        begin: 0.000001,
-                        end: 1.0,
-                      ),
+                      tween: ConstTween<double>(begin: 0.000001, end: 1.0),
                       interval: AnimationInterval(
                         start: Duration(milliseconds: 300),
                         end: Duration(milliseconds: 800),
@@ -421,20 +318,12 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
             properties: GroupAnimationProperties(
               translateX: [
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: -6.0,
-                    end: -0.5,
-                  ),
-                  interval: AnimationInterval(
-                    end: Duration(milliseconds: 300),
-                  ),
+                  tween: ConstTween<double>(begin: -6.0, end: -0.5),
+                  interval: AnimationInterval(end: Duration(milliseconds: 300)),
                   curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: -0.5,
-                    end: 0.0,
-                  ),
+                  tween: ConstTween<double>(begin: -0.5, end: 0.0),
                   interval: AnimationInterval(
                     start: Duration(milliseconds: 300),
                     end: Duration(milliseconds: 800),
@@ -444,20 +333,12 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
               ],
               translateY: [
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 6.0,
-                    end: 0.5,
-                  ),
-                  interval: AnimationInterval(
-                    end: Duration(milliseconds: 300),
-                  ),
+                  tween: ConstTween<double>(begin: 6.0, end: 0.5),
+                  interval: AnimationInterval(end: Duration(milliseconds: 300)),
                   curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 0.5,
-                    end: 0.0,
-                  ),
+                  tween: ConstTween<double>(begin: 0.5, end: 0.0),
                   interval: AnimationInterval(
                     start: Duration(milliseconds: 300),
                     end: Duration(milliseconds: 800),
@@ -472,9 +353,7 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
             translateY: 6.0,
             elements: [
               PathElement(
-                pathData: PathData.parse(
-                  'M 12 12 L 17.6 17.6',
-                ),
+                pathData: PathData.parse('M 12 12 L 17.6 17.6'),
                 strokeColor: Color(0xFF000000),
                 strokeWidth: 4.0,
                 strokeCap: StrokeCap.round,
@@ -482,10 +361,7 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
                 properties: PathAnimationProperties(
                   strokeWidth: [
                     AnimationStep<double>(
-                      tween: ConstTween<double>(
-                        begin: 4.0,
-                        end: 2.0,
-                      ),
+                      tween: ConstTween<double>(begin: 4.0, end: 2.0),
                       interval: AnimationInterval(
                         end: Duration(milliseconds: 300),
                       ),
@@ -494,10 +370,7 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
                   ],
                   trimEnd: [
                     AnimationStep<double>(
-                      tween: ConstTween<double>(
-                        begin: 0.000001,
-                        end: 1.0,
-                      ),
+                      tween: ConstTween<double>(begin: 0.000001, end: 1.0),
                       interval: AnimationInterval(
                         start: Duration(milliseconds: 300),
                         end: Duration(milliseconds: 800),
@@ -511,20 +384,12 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
             properties: GroupAnimationProperties(
               translateX: [
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 6.0,
-                    end: 0.5,
-                  ),
-                  interval: AnimationInterval(
-                    end: Duration(milliseconds: 300),
-                  ),
+                  tween: ConstTween<double>(begin: 6.0, end: 0.5),
+                  interval: AnimationInterval(end: Duration(milliseconds: 300)),
                   curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 0.5,
-                    end: 0.0,
-                  ),
+                  tween: ConstTween<double>(begin: 0.5, end: 0.0),
                   interval: AnimationInterval(
                     start: Duration(milliseconds: 300),
                     end: Duration(milliseconds: 800),
@@ -534,20 +399,12 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
               ],
               translateY: [
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 6.0,
-                    end: 0.5,
-                  ),
-                  interval: AnimationInterval(
-                    end: Duration(milliseconds: 300),
-                  ),
+                  tween: ConstTween<double>(begin: 6.0, end: 0.5),
+                  interval: AnimationInterval(end: Duration(milliseconds: 300)),
                   curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 0.5,
-                    end: 0.0,
-                  ),
+                  tween: ConstTween<double>(begin: 0.5, end: 0.0),
                   interval: AnimationInterval(
                     start: Duration(milliseconds: 300),
                     end: Duration(milliseconds: 800),
@@ -561,20 +418,12 @@ const AnimatedVectorData _$apps_to_close = AnimatedVectorData(
         properties: GroupAnimationProperties(
           rotation: [
             AnimationStep<double>(
-              tween: ConstTween<double>(
-                begin: 0.0,
-                end: 90.0,
-              ),
-              interval: AnimationInterval(
-                end: Duration(milliseconds: 300),
-              ),
+              tween: ConstTween<double>(begin: 0.0, end: 90.0),
+              interval: AnimationInterval(end: Duration(milliseconds: 300)),
               curve: ShapeShifterCurves.fastOutSlowIn,
             ),
             AnimationStep<double>(
-              tween: ConstTween<double>(
-                begin: 90.0,
-                end: 180.0,
-              ),
+              tween: ConstTween<double>(begin: 90.0, end: 180.0),
               interval: AnimationInterval(
                 start: Duration(milliseconds: 300),
                 end: Duration(milliseconds: 800),
@@ -613,9 +462,7 @@ const AnimatedVectorData _$add_transition = AnimatedVectorData(
                       'M 13 11 C 13 11.552 12.552 12 12 12 C 11.448 12 11 11.552 11 11 L 11 11 C 11 10.448 11.448 10 12 10 C 12.552 10 13 10.448 13 11 L 13 11 Z M 14 12 C 14 12.552 13.552 13 13 13 L 13 13 C 12.448 13 12 12.552 12 12 C 12 11.448 12.448 11 13 11 L 13 11 C 13.552 11 14 11.448 14 12 Z M 12 12 C 12 12.552 11.552 13 11 13 L 11 13 C 10.448 13 10 12.552 10 12 C 10 11.448 10.448 11 11 11 L 11 11 C 11.552 11 12 11.448 12 12 Z M 13 13 C 13 13.552 12.552 14 12 14 C 11.448 14 11 13.552 11 13 L 11 13 C 11 12.448 11.448 12 12 12 C 12.552 12 13 12.448 13 13 L 13 13 Z',
                     ),
                   ),
-                  interval: AnimationInterval(
-                    end: Duration(milliseconds: 200),
-                  ),
+                  interval: AnimationInterval(end: Duration(milliseconds: 200)),
                   curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
                 AnimationStep<PathData>(
@@ -640,20 +487,12 @@ const AnimatedVectorData _$add_transition = AnimatedVectorData(
         properties: GroupAnimationProperties(
           rotation: [
             AnimationStep<double>(
-              tween: ConstTween<double>(
-                begin: 0.0,
-                end: 180.0,
-              ),
-              interval: AnimationInterval(
-                end: Duration(milliseconds: 200),
-              ),
+              tween: ConstTween<double>(begin: 0.0, end: 180.0),
+              interval: AnimationInterval(end: Duration(milliseconds: 200)),
               curve: ShapeShifterCurves.fastOutSlowIn,
             ),
             AnimationStep<double>(
-              tween: ConstTween<double>(
-                begin: 180.0,
-                end: 360.0,
-              ),
+              tween: ConstTween<double>(begin: 180.0, end: 360.0),
               interval: AnimationInterval(
                 start: Duration(milliseconds: 200),
                 end: Duration(milliseconds: 500),
@@ -675,23 +514,15 @@ const AnimatedVectorData _$download_start = AnimatedVectorData(
       GroupElement(
         elements: [
           ClipPathElement(
-            pathData: PathData.parse(
-              'M 5 3 L 19 3 L 19 3 L 5 3 Z',
-            ),
+            pathData: PathData.parse('M 5 3 L 19 3 L 19 3 L 5 3 Z'),
             properties: ClipPathAnimationProperties(
               pathData: [
                 AnimationStep<PathData>(
                   tween: ConstPathDataTween(
-                    begin: PathData.parse(
-                      'M 5 3 L 19 3 L 19 3 L 5 3 Z',
-                    ),
-                    end: PathData.parse(
-                      'M 5 3 L 19 3 L 19 16 L 5 16 Z',
-                    ),
+                    begin: PathData.parse('M 5 3 L 19 3 L 19 3 L 5 3 Z'),
+                    end: PathData.parse('M 5 3 L 19 3 L 19 16 L 5 16 Z'),
                   ),
-                  interval: AnimationInterval(
-                    end: Duration(milliseconds: 500),
-                  ),
+                  interval: AnimationInterval(end: Duration(milliseconds: 500)),
                   curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
               ],
@@ -709,9 +540,7 @@ const AnimatedVectorData _$download_start = AnimatedVectorData(
       GroupElement(
         elements: [
           PathElement(
-            pathData: PathData.parse(
-              'M 5 19 L 19 19',
-            ),
+            pathData: PathData.parse('M 5 19 L 19 19'),
             strokeColor: Color(0xFF000000),
             strokeAlpha: 0.2,
             strokeWidth: 2.0,
@@ -719,13 +548,8 @@ const AnimatedVectorData _$download_start = AnimatedVectorData(
             properties: PathAnimationProperties(
               trimEnd: [
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 0.0,
-                    end: 1.0,
-                  ),
-                  interval: AnimationInterval(
-                    end: Duration(milliseconds: 500),
-                  ),
+                  tween: ConstTween<double>(begin: 0.0, end: 1.0),
+                  interval: AnimationInterval(end: Duration(milliseconds: 500)),
                   curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
               ],
@@ -757,19 +581,14 @@ const AnimatedVectorData _$download_loop = AnimatedVectorData(
             ),
           ),
           PathElement(
-            pathData: PathData.parse(
-              'M 12 3 L 12 16',
-            ),
+            pathData: PathData.parse('M 12 3 L 12 16'),
             strokeColor: Color(0xFF000000),
             strokeWidth: 14.0,
             trimEnd: 0.0,
             properties: PathAnimationProperties(
               trimStart: [
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 0.0,
-                    end: 1.0,
-                  ),
+                  tween: ConstTween<double>(begin: 0.0, end: 1.0),
                   interval: AnimationInterval(
                     start: Duration(milliseconds: 150),
                     end: Duration(milliseconds: 450),
@@ -777,10 +596,7 @@ const AnimatedVectorData _$download_loop = AnimatedVectorData(
                   curve: ShapeShifterCurves.accelerateDecelerate,
                 ),
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 0.0,
-                    end: 1.0,
-                  ),
+                  tween: ConstTween<double>(begin: 0.0, end: 1.0),
                   interval: AnimationInterval(
                     start: Duration(milliseconds: 700),
                     end: Duration(milliseconds: 1000),
@@ -790,20 +606,12 @@ const AnimatedVectorData _$download_loop = AnimatedVectorData(
               ],
               trimEnd: [
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 0.0,
-                    end: 1.0,
-                  ),
-                  interval: AnimationInterval(
-                    end: Duration(milliseconds: 300),
-                  ),
+                  tween: ConstTween<double>(begin: 0.0, end: 1.0),
+                  interval: AnimationInterval(end: Duration(milliseconds: 300)),
                   curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 0.0,
-                    end: 1.0,
-                  ),
+                  tween: ConstTween<double>(begin: 0.0, end: 1.0),
                   interval: AnimationInterval(
                     start: Duration(milliseconds: 500),
                     end: Duration(milliseconds: 500),
@@ -811,10 +619,7 @@ const AnimatedVectorData _$download_loop = AnimatedVectorData(
                   curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 0.0,
-                    end: 1.0,
-                  ),
+                  tween: ConstTween<double>(begin: 0.0, end: 1.0),
                   interval: AnimationInterval(
                     start: Duration(milliseconds: 550),
                     end: Duration(milliseconds: 850),
@@ -829,27 +634,20 @@ const AnimatedVectorData _$download_loop = AnimatedVectorData(
       GroupElement(
         elements: [
           PathElement(
-            pathData: PathData.parse(
-              'M 5 19 L 19 19',
-            ),
+            pathData: PathData.parse('M 5 19 L 19 19'),
             strokeColor: Color(0xFF000000),
             strokeAlpha: 0.2,
             strokeWidth: 2.0,
           ),
           PathElement(
-            pathData: PathData.parse(
-              'M 5 19 L 19 19',
-            ),
+            pathData: PathData.parse('M 5 19 L 19 19'),
             strokeColor: Color(0xFF000000),
             strokeWidth: 2.0,
             trimEnd: 0.0,
             properties: PathAnimationProperties(
               trimStart: [
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 0.0,
-                    end: 1.0,
-                  ),
+                  tween: ConstTween<double>(begin: 0.0, end: 1.0),
                   interval: AnimationInterval(
                     start: Duration(milliseconds: 150),
                     end: Duration(milliseconds: 450),
@@ -857,10 +655,7 @@ const AnimatedVectorData _$download_loop = AnimatedVectorData(
                   curve: ShapeShifterCurves.accelerateDecelerate,
                 ),
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 0.0,
-                    end: 1.0,
-                  ),
+                  tween: ConstTween<double>(begin: 0.0, end: 1.0),
                   interval: AnimationInterval(
                     start: Duration(milliseconds: 700),
                     end: Duration(milliseconds: 1000),
@@ -870,20 +665,12 @@ const AnimatedVectorData _$download_loop = AnimatedVectorData(
               ],
               trimEnd: [
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 0.0,
-                    end: 1.0,
-                  ),
-                  interval: AnimationInterval(
-                    end: Duration(milliseconds: 300),
-                  ),
+                  tween: ConstTween<double>(begin: 0.0, end: 1.0),
+                  interval: AnimationInterval(end: Duration(milliseconds: 300)),
                   curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 0.0,
-                    end: 1.0,
-                  ),
+                  tween: ConstTween<double>(begin: 0.0, end: 1.0),
                   interval: AnimationInterval(
                     start: Duration(milliseconds: 550),
                     end: Duration(milliseconds: 850),
@@ -907,23 +694,15 @@ const AnimatedVectorData _$download_end = AnimatedVectorData(
       GroupElement(
         elements: [
           ClipPathElement(
-            pathData: PathData.parse(
-              'M 5 3 L 19 3 L 19 16 L 5 16 Z',
-            ),
+            pathData: PathData.parse('M 5 3 L 19 3 L 19 16 L 5 16 Z'),
             properties: ClipPathAnimationProperties(
               pathData: [
                 AnimationStep<PathData>(
                   tween: ConstPathDataTween(
-                    begin: PathData.parse(
-                      'M 5 3 L 19 3 L 19 16 L 5 16 Z',
-                    ),
-                    end: PathData.parse(
-                      'M 5 16 L 19 16 L 19 16 L 5 16 Z',
-                    ),
+                    begin: PathData.parse('M 5 3 L 19 3 L 19 16 L 5 16 Z'),
+                    end: PathData.parse('M 5 16 L 19 16 L 19 16 L 5 16 Z'),
                   ),
-                  interval: AnimationInterval(
-                    end: Duration(milliseconds: 300),
-                  ),
+                  interval: AnimationInterval(end: Duration(milliseconds: 300)),
                   curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
               ],
@@ -941,19 +720,14 @@ const AnimatedVectorData _$download_end = AnimatedVectorData(
       GroupElement(
         elements: [
           PathElement(
-            pathData: PathData.parse(
-              'M 5 19 L 19 19',
-            ),
+            pathData: PathData.parse('M 5 19 L 19 19'),
             strokeColor: Color(0xFF000000),
             strokeAlpha: 0.2,
             strokeWidth: 2.0,
             properties: PathAnimationProperties(
               strokeAlpha: [
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 0.2,
-                    end: 0.0,
-                  ),
+                  tween: ConstTween<double>(begin: 0.2, end: 0.0),
                   interval: AnimationInterval(
                     start: Duration(milliseconds: 500),
                     end: Duration(milliseconds: 500),
@@ -964,19 +738,14 @@ const AnimatedVectorData _$download_end = AnimatedVectorData(
             ),
           ),
           PathElement(
-            pathData: PathData.parse(
-              'M 5 19 L 19 19',
-            ),
+            pathData: PathData.parse('M 5 19 L 19 19'),
             strokeColor: Color(0xFF000000),
             strokeWidth: 2.0,
             trimEnd: 0.0,
             properties: PathAnimationProperties(
               trimStart: [
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 0.0,
-                    end: 1.0,
-                  ),
+                  tween: ConstTween<double>(begin: 0.0, end: 1.0),
                   interval: AnimationInterval(
                     start: Duration(milliseconds: 800),
                     end: Duration(milliseconds: 1100),
@@ -986,32 +755,22 @@ const AnimatedVectorData _$download_end = AnimatedVectorData(
               ],
               trimEnd: [
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 0.0,
-                    end: 1.0,
-                  ),
-                  interval: AnimationInterval(
-                    end: Duration(milliseconds: 500),
-                  ),
+                  tween: ConstTween<double>(begin: 0.0, end: 1.0),
+                  interval: AnimationInterval(end: Duration(milliseconds: 500)),
                   curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
               ],
             ),
           ),
           PathElement(
-            pathData: PathData.parse(
-              'M 4.57 9.66 L 9.53 14.6 L 19.42 4.71',
-            ),
+            pathData: PathData.parse('M 4.57 9.66 L 9.53 14.6 L 19.42 4.71'),
             strokeColor: Color(0xFF000000),
             strokeWidth: 2.0,
             trimEnd: 0.0,
             properties: PathAnimationProperties(
               trimStart: [
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 0.0,
-                    end: 1.0,
-                  ),
+                  tween: ConstTween<double>(begin: 0.0, end: 1.0),
                   interval: AnimationInterval(
                     start: Duration(milliseconds: 800),
                     end: Duration(milliseconds: 1100),
@@ -1021,13 +780,8 @@ const AnimatedVectorData _$download_end = AnimatedVectorData(
               ],
               trimEnd: [
                 AnimationStep<double>(
-                  tween: ConstTween<double>(
-                    begin: 0.0,
-                    end: 1.0,
-                  ),
-                  interval: AnimationInterval(
-                    end: Duration(milliseconds: 500),
-                  ),
+                  tween: ConstTween<double>(begin: 0.0, end: 1.0),
+                  interval: AnimationInterval(end: Duration(milliseconds: 500)),
                   curve: ShapeShifterCurves.fastOutSlowIn,
                 ),
               ],
@@ -1036,9 +790,7 @@ const AnimatedVectorData _$download_end = AnimatedVectorData(
         ],
       ),
       PathElement(
-        pathData: PathData.parse(
-          'M 4.12 12.705 L 9 17.585 L 20.295 6.295',
-        ),
+        pathData: PathData.parse('M 4.12 12.705 L 9 17.585 L 20.295 6.295'),
         strokeWidth: 2.0,
       ),
     ],
@@ -1051,24 +803,16 @@ const AnimatedVectorData _$isocube = AnimatedVectorData(
   root: RootVectorElement(
     elements: [
       PathElement(
-        pathData: PathData.parse(
-          'M 3 12 L 24 24 L 24 48 L 3 36 Z',
-        ),
+        pathData: PathData.parse('M 3 12 L 24 24 L 24 48 L 3 36 Z'),
         fillColor: Color(0xFFFFFFFF),
         properties: PathAnimationProperties(
           pathData: [
             AnimationStep<PathData>(
               tween: ConstPathDataTween(
-                begin: PathData.parse(
-                  'M 3 12 L 24 24 L 24 48 L 3 36 Z',
-                ),
-                end: PathData.parse(
-                  'M 3 36 L 24 48 L 44 36 L 24 24 Z',
-                ),
+                begin: PathData.parse('M 3 12 L 24 24 L 24 48 L 3 36 Z'),
+                end: PathData.parse('M 3 36 L 24 48 L 44 36 L 24 24 Z'),
               ),
-              interval: AnimationInterval(
-                end: Duration(milliseconds: 500),
-              ),
+              interval: AnimationInterval(end: Duration(milliseconds: 500)),
               curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
@@ -1078,33 +822,23 @@ const AnimatedVectorData _$isocube = AnimatedVectorData(
                 begin: Color(0xFFFFFFFF),
                 end: Color(0xFF000000),
               ),
-              interval: AnimationInterval(
-                end: Duration(milliseconds: 500),
-              ),
+              interval: AnimationInterval(end: Duration(milliseconds: 500)),
               curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
         ),
       ),
       PathElement(
-        pathData: PathData.parse(
-          'M 24 24 L 45 36 L 45 12 L 24 0 Z',
-        ),
+        pathData: PathData.parse('M 24 24 L 45 36 L 45 12 L 24 0 Z'),
         fillColor: Color(0xFF000000),
         properties: PathAnimationProperties(
           pathData: [
             AnimationStep<PathData>(
               tween: ConstPathDataTween(
-                begin: PathData.parse(
-                  'M 24 24 L 45 36 L 45 12 L 24 0 Z',
-                ),
-                end: PathData.parse(
-                  'M 24 0 L 45 12 L 24 24 L 3 12 Z',
-                ),
+                begin: PathData.parse('M 24 24 L 45 36 L 45 12 L 24 0 Z'),
+                end: PathData.parse('M 24 0 L 45 12 L 24 24 L 3 12 Z'),
               ),
-              interval: AnimationInterval(
-                end: Duration(milliseconds: 500),
-              ),
+              interval: AnimationInterval(end: Duration(milliseconds: 500)),
               curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
@@ -1114,33 +848,23 @@ const AnimatedVectorData _$isocube = AnimatedVectorData(
                 begin: Color(0xFF000000),
                 end: Color(0xFFE4E4E4),
               ),
-              interval: AnimationInterval(
-                end: Duration(milliseconds: 500),
-              ),
+              interval: AnimationInterval(end: Duration(milliseconds: 500)),
               curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
         ),
       ),
       PathElement(
-        pathData: PathData.parse(
-          'M 3 12 L 24 24 L 24 48 L 3 36 Z',
-        ),
+        pathData: PathData.parse('M 3 12 L 24 24 L 24 48 L 3 36 Z'),
         fillColor: Color(0xFFE4E4E4),
         properties: PathAnimationProperties(
           pathData: [
             AnimationStep<PathData>(
               tween: ConstPathDataTween(
-                begin: PathData.parse(
-                  'M 24 0 L 45 12 L 24 24 L 3 12 Z',
-                ),
-                end: PathData.parse(
-                  'M 3 12 L 24 24 L 24 48 L 3 36 Z',
-                ),
+                begin: PathData.parse('M 24 0 L 45 12 L 24 24 L 3 12 Z'),
+                end: PathData.parse('M 3 12 L 24 24 L 24 48 L 3 36 Z'),
               ),
-              interval: AnimationInterval(
-                end: Duration(milliseconds: 500),
-              ),
+              interval: AnimationInterval(end: Duration(milliseconds: 500)),
               curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
@@ -1150,33 +874,23 @@ const AnimatedVectorData _$isocube = AnimatedVectorData(
                 begin: Color(0xFFE4E4E4),
                 end: Color(0xFFFFFFFF),
               ),
-              interval: AnimationInterval(
-                end: Duration(milliseconds: 500),
-              ),
+              interval: AnimationInterval(end: Duration(milliseconds: 500)),
               curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],
         ),
       ),
       PathElement(
-        pathData: PathData.parse(
-          'M 45 12 L 45 36 L 24 48 L 24 24 Z',
-        ),
+        pathData: PathData.parse('M 45 12 L 45 36 L 24 48 L 24 24 Z'),
         fillColor: Color(0xFFCACACA),
         properties: PathAnimationProperties(
           pathData: [
             AnimationStep<PathData>(
               tween: ConstPathDataTween(
-                begin: PathData.parse(
-                  'M 45 12 L 45 36 L 24 48 L 24 24 Z',
-                ),
-                end: PathData.parse(
-                  'M 24 24 L 45 12 L 45 36 L 24 48 Z',
-                ),
+                begin: PathData.parse('M 45 12 L 45 36 L 24 48 L 24 24 Z'),
+                end: PathData.parse('M 24 24 L 45 12 L 45 36 L 24 48 Z'),
               ),
-              interval: AnimationInterval(
-                end: Duration(milliseconds: 500),
-              ),
+              interval: AnimationInterval(end: Duration(milliseconds: 500)),
               curve: ShapeShifterCurves.fastOutSlowIn,
             ),
           ],

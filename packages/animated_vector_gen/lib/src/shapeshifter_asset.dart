@@ -13,8 +13,10 @@ import 'package:source_gen/source_gen.dart'
         TypeChecker;
 
 class ShapeshifterAssetGenerator extends Generator {
-  TypeChecker get typeChecker =>
-      const TypeChecker.fromRuntime(ShapeShifterAsset);
+  TypeChecker get typeChecker => const TypeChecker.typeNamed(
+    ShapeShifterAsset,
+    inPackage: 'animated_vector_annotations',
+  );
 
   @override
   Future<String> generate(LibraryReader library, BuildStep buildStep) async {
@@ -50,12 +52,14 @@ class ShapeshifterAssetGenerator extends Generator {
   ) async {
     if (element is! VariableElement || !element.isStatic) {
       throw Exception(
-        "Only a toplevel variable or a static class field can be annotated with @ShapeshifterAsset.\nTried annotating ${element.source}.",
+        "Only a toplevel variable or a static class field can be annotated with @ShapeshifterAsset.\nTried annotating ${element.displayName}.",
       );
     }
 
     if (!element.isConst) {
-      throw Exception("The annotated field must be const.\n${element.source}.");
+      throw Exception(
+        "The annotated field must be const.\n${element.displayName}.",
+      );
     }
 
     final filePath = annotation.read("path").stringValue;
