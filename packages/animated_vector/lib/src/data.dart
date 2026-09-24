@@ -75,9 +75,8 @@ class AnimatedVectorData {
   ///
   /// Where possible prefer to use code generation from [animated_vector_gen](https://pub.dev/packages/animated_vector_gen)
   /// as it's syncronous and allows for const instances to be created.
-  static Future<AnimatedVectorData> loadFromFile(String path) async {
-    return loadDataFromFile(path);
-  }
+  static Future<AnimatedVectorData> loadFromFile(String path) =>
+      loadDataFromFile(path);
 
   /// Dynamically load an [AnimatedVectorData] from a json Shape Shifter file
   /// bundled in the app or other packages assets.
@@ -94,8 +93,9 @@ class AnimatedVectorData {
     AssetBundle? bundle,
     String? package,
   }) {
-    final assetKey =
-        package != null ? "packages/$package/$assetName" : assetName;
+    final assetKey = package != null
+        ? "packages/$package/$assetName"
+        : assetName;
 
     return (bundle ?? rootBundle).loadStructuredData(
       assetKey,
@@ -223,14 +223,17 @@ class RootVectorElement extends VectorElement<RootVectorAnimationProperties> {
     Duration duration,
     Matrix4 transform,
   ) {
-    final evaluated =
-        properties.evaluate(progress, duration, defaultAlpha: alpha);
+    final evaluated = properties.evaluate(
+      progress,
+      duration,
+      defaultAlpha: alpha,
+    );
 
     canvas.saveLayer(
       Offset.zero & size,
       Paint()
         ..colorFilter = ColorFilter.mode(
-          const Color(0xFFFFFFFF).withOpacity(evaluated.alpha!),
+          const Color(0xFFFFFFFF).withValues(alpha: evaluated.alpha),
           BlendMode.modulate,
         ),
     );
@@ -333,11 +336,11 @@ class GroupElement extends VectorElement<GroupAnimationProperties> {
     );
 
     final transformMatrix = transform.clone()
-      ..translate(evaluated.pivotX, evaluated.pivotY!)
-      ..translate(evaluated.translateX, evaluated.translateY!)
+      ..translateByDouble(evaluated.pivotX!, evaluated.pivotY!, 0, 1)
+      ..translateByDouble(evaluated.translateX!, evaluated.translateY!, 0, 1)
       ..rotateZ(evaluated.rotation! * math.pi / 180)
-      ..scale(evaluated.scaleX, evaluated.scaleY)
-      ..translate(-evaluated.pivotX!, -evaluated.pivotY!);
+      ..scaleByDouble(evaluated.scaleX!, evaluated.scaleY!, 1, 1)
+      ..translateByDouble(-evaluated.pivotX!, -evaluated.pivotY!, 0, 1);
 
     canvas.save();
     for (final VectorElement element in elements) {
@@ -348,16 +351,16 @@ class GroupElement extends VectorElement<GroupAnimationProperties> {
 
   @override
   int get hashCode => Object.hash(
-        translateX,
-        translateY,
-        scaleX,
-        scaleY,
-        pivotX,
-        pivotY,
-        rotation,
-        elements,
-        properties,
-      );
+    translateX,
+    translateY,
+    scaleX,
+    scaleY,
+    pivotX,
+    pivotY,
+    rotation,
+    elements,
+    properties,
+  );
 
   @override
   bool operator ==(Object other) {
@@ -479,9 +482,9 @@ class PathElement extends VectorElement<PathAnimationProperties> {
     this.trimEnd = 1.0,
     this.trimOffset = 0.0,
     super.properties = const PathAnimationProperties(),
-  })  : assert(trimStart >= 0 && trimStart <= 1),
-        assert(trimEnd >= 0 && trimEnd <= 1),
-        assert(trimOffset >= 0 && trimOffset <= 1);
+  }) : assert(trimStart >= 0 && trimStart <= 1),
+       assert(trimEnd >= 0 && trimEnd <= 1),
+       assert(trimOffset >= 0 && trimOffset <= 1);
 
   @override
   void paint(
@@ -518,8 +521,8 @@ class PathElement extends VectorElement<PathAnimationProperties> {
             )
             .transform(transform.storage),
         Paint()
-          ..color = strokeColor.withOpacity(
-            strokeColor.opacity * evaluated.strokeAlpha!,
+          ..color = strokeColor.withValues(
+            alpha: strokeColor.a * evaluated.strokeAlpha!,
           )
           ..strokeWidth = evaluated.strokeWidth!
           ..strokeCap = strokeCap
@@ -531,27 +534,28 @@ class PathElement extends VectorElement<PathAnimationProperties> {
     canvas.drawPath(
       evaluated.pathData!.toPath().transform(transform.storage),
       Paint()
-        ..color =
-            fillColor.withOpacity(fillColor.opacity * evaluated.fillAlpha!),
+        ..color = fillColor.withValues(
+          alpha: fillColor.a * evaluated.fillAlpha!,
+        ),
     );
   }
 
   @override
   int get hashCode => Object.hash(
-        pathData,
-        fillColor,
-        fillAlpha,
-        strokeColor,
-        strokeAlpha,
-        strokeWidth,
-        strokeCap,
-        strokeJoin,
-        strokeMiterLimit,
-        trimStart,
-        trimEnd,
-        trimOffset,
-        properties,
-      );
+    pathData,
+    fillColor,
+    fillAlpha,
+    strokeColor,
+    strokeAlpha,
+    strokeWidth,
+    strokeCap,
+    strokeJoin,
+    strokeMiterLimit,
+    trimStart,
+    trimEnd,
+    trimOffset,
+    properties,
+  );
 
   @override
   bool operator ==(Object other) {

@@ -32,8 +32,9 @@ abstract final class ShapeShifterConverter {
 
     final Map<String, dynamic> layers = json.get("layers");
     final Map<String, dynamic> vectorLayer = layers.get("vectorLayer");
-    final Map<String, dynamic> animation =
-        json.get<Map<String, dynamic>>("timeline").get("animation");
+    final Map<String, dynamic> animation = json
+        .get<Map<String, dynamic>>("timeline")
+        .get("animation");
     final List<_JsonAnimationProperty> blocks = animation
         .get<List<dynamic>>("blocks")
         .map((e) => _JsonAnimationProperty.fromJson(e as Map<String, dynamic>))
@@ -82,8 +83,10 @@ abstract final class ShapeShifterConverter {
       "name": "anim",
       "duration": data.duration.inMilliseconds,
     };
-    final Map<String, List<Map<String, dynamic>>> info =
-        _elementsToJson(data.root.elements, idGen);
+    final Map<String, List<Map<String, dynamic>>> info = _elementsToJson(
+      data.root.elements,
+      idGen,
+    );
     vectorLayer["children"] = info["children"];
 
     final alphaAnim = _timelineFromProperties<double, num>(
@@ -94,18 +97,12 @@ abstract final class ShapeShifterConverter {
       data.root.alpha,
       idGen,
     );
-    timelineRoot["blocks"] = [
-      if (alphaAnim != null) alphaAnim,
-      ...info["timeline"]!,
-    ];
+    timelineRoot["blocks"] = [?alphaAnim, ...info["timeline"]!];
     if (data.root.alpha != 1) {
       vectorLayer["alpha"] = data.root.alpha.eventuallyAsInt;
     }
 
-    documentRoot["layers"] = {
-      "vectorLayer": vectorLayer,
-      "hiddenLayerIds": [],
-    };
+    documentRoot["layers"] = {"vectorLayer": vectorLayer, "hiddenLayerIds": []};
     documentRoot["timeline"] = {"animation": timelineRoot};
 
     return documentRoot;
@@ -267,8 +264,10 @@ abstract final class ShapeShifterConverter {
         if (element.rotation != 0) {
           toJson["rotation"] = element.rotation.eventuallyAsInt;
         }
-        final Map<String, List<Map<String, dynamic>>> info =
-            _elementsToJson(element.elements, generator);
+        final Map<String, List<Map<String, dynamic>>> info = _elementsToJson(
+          element.elements,
+          generator,
+        );
         toJson["children"] = info["children"];
         returnTimeline.addAll(info["timeline"]!);
 
@@ -357,10 +356,7 @@ abstract final class ShapeShifterConverter {
       if (toJson.isNotEmpty) returnElements.add(toJson);
     }
 
-    return {
-      "children": returnElements,
-      "timeline": returnTimeline,
-    };
+    return {"children": returnElements, "timeline": returnTimeline};
   }
 
   static List<Map<String, dynamic>>? _timelineFromProperties<T, V>(
@@ -387,9 +383,11 @@ abstract final class ShapeShifterConverter {
 
     for (int i = 0; i < properties.length; i++) {
       final AnimationStep<T> prop = properties[i];
-      final T beginValue = prop.tween.begin ??
+      final T beginValue =
+          prop.tween.begin ??
           getNearestDefaultForTween(properties, i, defaultValue, goDown: true);
-      final T endValue = prop.tween.end ??
+      final T endValue =
+          prop.tween.end ??
           getNearestDefaultForTween(properties, i, defaultValue);
 
       final Map<String, dynamic> jsonProp = {
@@ -398,8 +396,9 @@ abstract final class ShapeShifterConverter {
         "propertyName": name,
         "startTime": prop.interval.start.inMilliseconds,
         "endTime": prop.interval.end.inMilliseconds,
-        "interpolator":
-            _JsonAnimationProperty._stringFromInterpolator(prop.curve),
+        "interpolator": _JsonAnimationProperty._stringFromInterpolator(
+          prop.curve,
+        ),
         "type": type,
         "fromValue": formatter(beginValue),
         "toValue": formatter(endValue),
@@ -429,10 +428,12 @@ abstract final class ShapeShifterConverter {
             strokeColor: _colorFromHex(child.maybeGet<String>("strokeColor")),
             strokeAlpha: child.maybeGet<num>("strokeAlpha")?.toDouble() ?? 1.0,
             strokeWidth: child.maybeGet<num>("strokeWidth")?.toDouble() ?? 1.0,
-            strokeCap:
-                _strokeCapFromString(child.maybeGet<String>("strokeLinecap")),
-            strokeJoin:
-                _strokeJoinFromString(child.maybeGet<String>("strokeLinejoin")),
+            strokeCap: _strokeCapFromString(
+              child.maybeGet<String>("strokeLinecap"),
+            ),
+            strokeJoin: _strokeJoinFromString(
+              child.maybeGet<String>("strokeLinejoin"),
+            ),
             strokeMiterLimit:
                 child.maybeGet<num>("strokeMiterLimit")?.toDouble() ?? 4.0,
             trimStart: child.maybeGet<num>("trimPathStart")?.toDouble() ?? 0.0,
@@ -647,8 +648,9 @@ class _JsonAnimationProperty<T> {
     final String propertyName = json.get<String>("propertyName");
     final int startTime = json.get<int>("startTime");
     final int endTime = json.get<int>("endTime");
-    final Curve interpolator =
-        _interpolatorFromString(json.get<String>("interpolator"));
+    final Curve interpolator = _interpolatorFromString(
+      json.get<String>("interpolator"),
+    );
     final String type = json.get<String>("type");
 
     switch (type) {
@@ -764,9 +766,10 @@ Color? _colorFromHex(String? hex) {
 }
 
 String _colorToHex(Color color) {
-  // ignore: deprecated_member_use
-  final String radixString = color.value.toRadixString(16);
-  if (color.alpha == 0xFF) return "#${radixString.substring(2)}";
+  final String radixString = color.toARGB32().toRadixString(16);
+  if ((color.a * 255.0).round().clamp(0, 255) == 0xFF) {
+    return "#${radixString.substring(2)}";
+  }
   return "#$radixString";
 }
 

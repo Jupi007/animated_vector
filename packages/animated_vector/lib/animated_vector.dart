@@ -1,5 +1,5 @@
 /// A library for animated vectors that can be defined in a declarative and composable way a la flutter
-library animated_vector;
+library;
 
 export 'src/animation.dart';
 export 'src/curves.dart';

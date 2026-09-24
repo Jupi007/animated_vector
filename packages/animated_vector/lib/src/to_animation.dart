@@ -60,8 +60,8 @@ extension AnimatedVectorDataToAnimation on AnimatedVectorData {
     assert(targetSize == null || !targetSize.isEmpty || !targetSize.isInfinite);
 
     final (width, height) = (
-      (targetSize?.width ?? viewportSize.width),
-      (targetSize?.height ?? viewportSize.height),
+      targetSize?.width ?? viewportSize.width,
+      targetSize?.height ?? viewportSize.height,
     );
     final frameDuration = (1000 / frameRate).floor();
     final animationStepInterval = frameDuration / duration.inMilliseconds;
@@ -95,8 +95,8 @@ extension AnimatedVectorDataToAnimation on AnimatedVectorData {
           height: msg.height.toInt(),
           bytes: msg.byteData!.buffer,
           numChannels: 4,
-          frameDuration:
-              (msg.frameDuration * msg.frameDurationModifier).floor(),
+          frameDuration: (msg.frameDuration * msg.frameDurationModifier)
+              .floor(),
         ),
         (
           width: width,
@@ -127,6 +127,6 @@ extension AnimatedVectorDataToAnimation on AnimatedVectorData {
       ExportAnimationFormat.apng => img.encodePng,
     };
 
-    return compute((gif) => encoder(gif), gif!);
+    return await compute((gif) => encoder(gif), gif!);
   }
 }
