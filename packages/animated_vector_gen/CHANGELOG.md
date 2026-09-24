@@ -1,3 +1,7 @@
+## 0.3.0
+
+- Update dependencies and apply lints [#7](https://github.com/dvd-bnc/animated_vector/pull/7)
+
 ## 0.2.3
 
 Update dependency on animated_vector_annotations
