@@ -40,6 +40,9 @@ As follows we can see an example file and the generated counterpart:
 
 `vectors.dart`
 ```dart
+import 'dart:ui';
+
+import 'package:animated_vector/animated_vector.dart';
 import 'package:animated_vector_annotations/animated_vector_annotations.dart';
 
 part 'vectors.g.dart';
